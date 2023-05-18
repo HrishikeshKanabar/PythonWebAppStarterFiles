@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Employee Management</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    </head>
+    <body>
+        <div class="header">
+            <a href="{{ url_for('main') }}">Find Employee</a>
+            <a href="{{ url_for('add') }}">Add Employee</a>
+            <a href="{{ url_for('update') }}">Update Employee</a>
+            <a href="{{ url_for('delete') }}">Delete Employee</a>
+            <center>
+                <div class="title">Employee Mangement Dashboard</div>
+            </center>
+         </div>
+         <div class="main">
+            <br/>
+            <h1 class="h1-Find">UPDATE EMPLOYEE</h1>
+            <br/><br/> 
+            <form class="find-form">
+                <strong>Employee Id: (Required to update employee details)</strong>
+                <br/>
+                <input type="text" placeholder="Enter Employee Id.." name="id" id="id"/><br/><br/>
+                <strong>First Name:</strong>
+                <br/>
+                <input type="text" placeholder="Enter First Name.." name="fn" id="fn"/><br/><br/>
+                <strong>Last Name:</strong>
+                <br/>
+                <input type="text" placeholder="Enter Last Name.." name="ln" id="ln"/><br/><br/>
+                <strong>Gender: (Enter either M or F)</strong>
+                <br/>
+                <input type="text" placeholder="Enter Your gender.." name="gn" id="gn"/><br/><br/>
+                <strong>DOB: (Enter as 'YYYY-MM-DD')</strong>
+                <br/>
+                <input type="text" placeholder="Enter Your Birth Date.." name="bd" id="bd"/><br/><br/>
+                <br/><br/>
+                <input class="button" type="submit" value="Update Employee"/>
+            </form>
+    </body>
+</html>
